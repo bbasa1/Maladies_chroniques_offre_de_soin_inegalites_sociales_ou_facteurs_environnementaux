@@ -9,3 +9,14 @@
   - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
   - Les données socio-économiques (nivviem, taux pauvreté, ...).
 - Partie 3: Analyse jointe des deux tables
+
+## Bibliographie
+
+- Allain, Samuel. 2022. Les maladies chroniques touchent plus souvent les personnes modestes et réduisent davantage leur espérance de vie. 1243. Direction de la recherche, des études, de l’évaluation et des statistiques (DREES).
+- Anon. 2012. « Géographie de la santé », Géoconfluences.
+- Anon. s. d. « ACP, bases mathématiques ». 
+- Santé publique France. s. d.-a. Influence de l’environnement social sur la survie des patients atteints d’un cancer en France. Étude du réseau Francim.
+- Santé publique France. s. d.-b. Le diabète en France : les chiffres 2020.
+- Santé publique France. s. d.-c. Les agriculteurs et la maladie de Parkinson.
+- Santé publique France. 2022. Bulletin épidémiologique hebdomadaire, Journée mondiale du diabète. 22. Santé publique France.
+
