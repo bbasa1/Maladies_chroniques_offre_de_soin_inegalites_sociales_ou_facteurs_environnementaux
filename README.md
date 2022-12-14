@@ -1,5 +1,15 @@
 # Projet_python_2A
 
+## Introduction
+
+Ce projet vise à étudier les liens entre maladies chroniques et facteurs socio-économiques. Pour cela on considère différentes données :
+- DREES : Contient les taux d'incidences et de prévalences pour diverses maladies chroniques, par tranche d'âge, niveau de vie, région, sexe et niveau de diplôme.
+- Insee : On forme une table comportant, pour chaque région métropolitaine :
+  - Géographie (pour les cartes) ;
+  - Nombre de médecins ;
+  - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
+  - Les données socio-économiques (nivviem, taux pauvreté, ...).
+
 ## Organisation du notebook :
 
 - Partie 1 : Analyse de la table de la DREES seule.
