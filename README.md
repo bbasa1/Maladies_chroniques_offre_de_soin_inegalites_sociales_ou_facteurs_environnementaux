@@ -56,13 +56,34 @@ A FINIR
 
 #### Structure de la table
 
-Voici un schéma de la table 
+Voici un schéma de la table :
 
 | Type de données | Maladie             | VarGroupage | ValGroupage | VarPartition  | ValPartition | Poids1     | PoidsTot    | TauxNonStand | TauxStandDir | TauxStandIndir |
 |-----------------|---------------------|-------------|-------------|---------------|--------------|------------|-------------|--------------|--------------|----------------|
-| Incidence       | Maladies Cardiaques | Régions     | 76          | Niveau de vie | 7            | Nb malades | Nb gens tot | XXX          | XXX          | XXX            |
+| Incidence       | Maladies Cardiaques | Région      | 76          | Niveau de vie | 7            | Nb malades | Nb gens tot | XXX          | XXX          | XXX            |
 | Prévalence      | Diabète             | Sexe        | F           | Âge           | 50-59        | Nb malades | Nb gens tot | XXX          | XXX          | XXX            |
 
+- L'ensemble des valeurs de _VarGroupage_ est :
+   - Région ;
+   - Sexe.
+- L'ensemble des valeurs de _VarPartition_ est :
+   - Classe d'âge ;
+   - Classe socio-professionnelle ;
+   - Niveau de diplôme ;
+   - Décime de niveau de vie ;
+   - Sexe.
+- L'ensemble des maladies considérées est :
+   -Cancers ;
+   - Diabète ;
+   - Insuffisance rénale chronique terminale ;
+   - Maladies cardioneurovasculaires ;
+   - Maladies du foie ou du pancréas ;
+   - Maladies inflammatoires ou rares ou VIH ou SIDA ;
+   - Maladies neurologiques ou dégénératives ;
+   - Maladies psychiatriques ;
+   - Maladies respiratoires chroniques ;
+   - Traitements du risque vasculaire ;
+   - Traitements psychotropes.
 
 #### Grandeurs épidémiologiques théoriques :
 - Prévalence $= \frac{\text{nombre de cas présents ou passés}}{\text{population exposée à une date donnée }}$. C'est un stock à une date $t$.
