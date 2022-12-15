@@ -3,9 +3,11 @@
 ## Introduction
 
 Nous avons tout d'abord choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait pas les différences régionales de prévalence des maladies chroniques, raison pour laquelle nous avons utilisé cette partie de la base de données. 
+Nous avons voulu interroger l'importance des facteurs environnementaux (pollution, pesticides, ...) au regard des facteurs socioéconomiques. Par ailleurs, les données étant administratives, on peut se demander si les différences régionales observées ne seraient pas dû à un diagnostique moindre du fait d'un faible accès aux soins, que nous avons essayé d'objectiver en nous concentrant sur l'offre de soins primaires, et notamment sur les médecins généralistes libéraux.
+
 Nous avons voulu interroger l'importance des facteurs environnementaux (pollution, pesticides, ...) au regard des facteurs socioéconomiques.
 
-Ce projet vise à étudier les liens entre maladies chroniques et facteurs socio-économiques. Pour cela on considère différentes données :
+Pour cela on considère différentes données :
 - DREES : Contient les taux d'incidences et de prévalences pour diverses maladies chroniques, par tranche d'âge, niveau de vie, région, sexe et niveau de diplôme.
 - Insee : On forme une table comportant, pour chaque région métropolitaine :
   - Géographie (pour les cartes) ;
