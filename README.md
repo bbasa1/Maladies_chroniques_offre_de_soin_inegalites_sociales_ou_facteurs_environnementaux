@@ -54,6 +54,16 @@ A FINIR
 
 ## Explication : L'exploitation de la table de la DREES
 
+#### Structure de la table
+
+Voici un schéma de la table 
+
+| Type de données | Maladie             | VarGroupage | ValGroupage | VarPartition  | ValPartition | Poids1     | PoidsTot    | TauxNonStand | TauxStandDir | TauxStandIndir |
+|-----------------|---------------------|-------------|-------------|---------------|--------------|------------|-------------|--------------|--------------|----------------|
+| Incidence       | Maladies Cardiaques | Régions     | 76          | Niveau de vie | 7            | Nb malades | Nb gens tot | XXX          | XXX          | XXX            |
+| Prévalence      | Diabète             | Sexe        | F           | Âge           | 50-59        | Nb malades | Nb gens tot | XXX          | XXX          | XXX            |
+
+
 #### Grandeurs épidémiologiques théoriques :
 - Prévalence $= \frac{\text{nombre de cas présents ou passés}}{\text{population exposée à une date donnée }}$. C'est un stock à une date $t$.
 - Incidence : $ = $ nombre de nouveaux cas de cette maladie observés sur une période donnée. C'est une vitesse d'apparition d'une maladie à une date $t$.
