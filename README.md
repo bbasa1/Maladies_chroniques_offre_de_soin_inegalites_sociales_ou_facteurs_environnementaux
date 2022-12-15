@@ -40,19 +40,16 @@ Pour cela on considère différentes données :
 
 ## Principales conclusions 
 
-A FINIR
-
+Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. L'ACP nous permet ainsi d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
+Le résultat le plus intéressant de notre travail est en fait une absence de résultat, concernant l'offre de soins. Les inégalités d'accès aux soins primaires n'expliquent pas ici les différences de prévalence des maladies chroniques. 
+L'étude est limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études que des résultats en soi. 
 ## Bibliographie
 
-- Allain, Samuel. 2022. Les maladies chroniques touchent plus souvent les personnes modestes et réduisent davantage leur espérance de vie. 1243. Direction de la recherche, des études, de l’évaluation et des statistiques (DREES).
-- Anon. 2012. « Géographie de la santé », Géoconfluences.
-- Anon. s. d. « ACP, bases mathématiques ». 
-- Santé publique France. s. d.-a. Influence de l’environnement social sur la survie des patients atteints d’un cancer en France. Étude du réseau Francim.
-- Santé publique France. s. d.-b. Le diabète en France : les chiffres 2020.
-- Santé publique France. s. d.-c. Les agriculteurs et la maladie de Parkinson.
-- Santé publique France. 2022. Bulletin épidémiologique hebdomadaire, Journée mondiale du diabète. 22. Santé publique France.
-- Santé publique France. s. d. Pollution atmosphérique : quels sont les risques ?
-
+- Allain, Samuel. 2022. Les maladies chroniques touchent plus souvent les personnes modestes et réduisent davantage leur espérance de vie. 1243. Direction de la recherche, des études, de l’évaluation et des statistiques (DREES). URL : https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/etudes-et-resultats/les-maladies-chroniques-touchent-plus-souvent
+- Anon. s. d. « ACP, bases mathématiques ». URL : https://maths.cnam.fr/IMG/pdf/A-C-P-.pdf
+- Antonio, Hernandez. 2011. « Pesticides and asthma ». URL : https://pubmed.ncbi.nlm.nih.gov/21368619/
+- Prost, Thierry, et Denis Raynaud. 2021. Recueil d’indicateurs régionaux : Offre de soins et état de santé. DREES. URL : https://drees.solidarites-sante.gouv.fr/sites/default/files/2021-01/rir_2014_doc_partie_1-p01-55.pdf
+- Santé publique France. 2022. Bulletin épidémiologique hebdomadaire, Journée mondiale du diabète. URL : https://www.santepubliquefrance.fr/import/bulletin-epidemiologique-hebdomadaire-8-novembre-2022-n-22-journee-mondiale-du-diabete-14-novembre-2022
 
 ## Explication : L'exploitation de la table de la DREES
 
