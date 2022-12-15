@@ -36,7 +36,7 @@ Pour cela on considère différentes données :
 
 - Toutes les cellules s'exécutent linéairement ;
 - Toutefois, les cellules avant des sorties graphiques html peuvent mettre un peu de temps à s'afficher, voir même ne pas s'afficher sur certains ordinateurs ;
-- Pour cette raison, nous avons travaillé sur le service sspcloud, qui fonctionne parvient parfaitement à afficher des graphiques html.
+- Pour cette raison, nous avons travaillé sur le service sspcloud, qui parvient parfaitement à afficher des graphiques html.
 
 ## Principales conclusions 
 
