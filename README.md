@@ -19,55 +19,6 @@ Ce projet vise à étudier les liens entre maladies chroniques et facteurs socio
 - Nombre de psychiatres par région : https://drees.shinyapps.io/demographie-ps/
 - Densité de population par région : https://www.insee.fr/fr/statistiques/fichier/4277596/T20F013.xlsx
 
-## Quelques définitions utiles
-
-- Grandeurs épidémiologiques théoriques :
-   - Prévalence $= \frac{\text{nombre de cas présents ou passés}}{\text{population exposée à une date donnée }}$. C'est un stock à une date $t$.
-   - Incidence : $ = $ nombre de nouveaux cas de cette maladie observés sur une période donnée. C'est une vitesse d'apparition d'une maladie à une date $t$.
-
-# Bilan de la discussion avec Samuel Allain :
-
-- vartaux = type de maladie (code de pathologie détaillée ou type de pathologie)
-- I\_cat et cat = catégorie de la maladie
-- ne pas utiliser les variables "traitements"
-
-## Calcul des taux
-
-- Toutes les données sont standardisées par rapport à la structure âge/sexe de la population de référence (spécifiée dans VarPartition)
-- $Taux\ non\ standard = \frac{Poids1}{PoidsTot}$. Simple à calculer MAIS peut conduire à des analyses biaisées. Il y a un effet de structure qui n'est pas pris en compte : on compare des populations avec des structures d'âge et de sexe non équivalentes. Exemple : les jeunes sont moins malades, les pauvres sont plus jeunes, donc les pauvres sont moins malades, et donc la pauvreté protège de la maladie. 
-- Pour éviter ces biais d'analyse il faut comparer à d'autres variables égales (âge, niveau de vie, niveau de diplômes,...) : on réagrège les taux en appliquant une structure commune aux données. C'est ce qui donne le $Taux\ standard\ direct$ : On pondère par les effectifs de chaque catégorie. 
-- Le $Taux\ standard\ indirect$ est une autre méthode de standardisation qui est plutôt utilisée pour les phénomènes rares. C'est l'incidence (ou la prévalence) attendue "compte tenue de l'âge, du sexe, du niveau de vie, ...".
-
-## Comment faire des moyennes dans notre projet python ?
-
-- Formule la plus simple : $Taux\ non\ standard = \frac{\sum\limits_{nivviem}Poids1}{\sum\limits_{nivviem}PoidsTot} = \sum\limits_{nivviem}Poids1 \times TauxNonStand$. \
-où $Poids1$ représente l'effectif de la population qui a 1 en prévalence/indicence. 
-
-- Ca va être compliqué pour nous avec nos données (en fait impossible) de faire des taux standardisés.
-- Pour éviter une analyse biaisée due à l'utilisation de taux non standardisés, on peut utiliser les lignes $NaN$ dans $VarPartition$ et $VarGroupage$ :
-    - Aucun problème pour $VarPartition = NaN$ : on a bien une ligne avec les taux standardisés par $VarGroupage$ et $ValGroupage$, pour chaque maladie.
-    - ATTENTION pour $VarGroupage = NaN$ : Si on fait une moyenne au sein de la région, on se heurte au fait qu'ici, les standardisations ont été faites VIS-A-VIS de la population de la région (âge, niveau de vie, diplômes, ...) donc il faut faire attention à l'analyse...
-    
-    
-## Différentes maladies :
-
-- varTauxLib est une sous-catégorie de maladie ;
-- catLib est une maladie.
-
-On se concentre ici uniquement sur catLib. Ceci nous empêche d'utiliser les taux non standardisés calculés par varGroupage déjà présents (puisqu'ils sont calculés pour chaque sous-catégorie de maladie), mais cela simplifie nos analyses.
-
-## Deux possibilités :
-- Faire des taux non standardisés, au risque de faire des analyses de corrélations ou de causalités biaisées ;
-- Faire des moyennes de taux standardisés, au risque d'obtenir des chiffres faux...
-
-## Conséquences :
-- D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé.
-- Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, nous choisirons suivant les cas l'une des deux options, tout en gardant à l'esprit les limites de nos analyses, et de nos statistiques descriptives.
-- Si on s'arrête à ces grandeurs, alors on va prendre en compte des _facteurs de confusion_ et arriver à
-
-- Taux standardisés : élimine les effets liés à des "facteurs de confusion" (âge, sexe, ...)
-    - Standardisation directe : 
-    - Standardisation indirecte : 
 
 ## Organisation du notebook
 
@@ -99,4 +50,35 @@ A FINIR
 - Santé publique France. s. d.-c. Les agriculteurs et la maladie de Parkinson.
 - Santé publique France. 2022. Bulletin épidémiologique hebdomadaire, Journée mondiale du diabète. 22. Santé publique France.
 - Santé publique France. s. d. Pollution atmosphérique : quels sont les risques ?
+
+
+## Explication : L'exploitation de la table de la DREES
+
+#### Grandeurs épidémiologiques théoriques :
+- Prévalence $= \frac{\text{nombre de cas présents ou passés}}{\text{population exposée à une date donnée }}$. C'est un stock à une date $t$.
+- Incidence : $ = $ nombre de nouveaux cas de cette maladie observés sur une période donnée. C'est une vitesse d'apparition d'une maladie à une date $t$.
+
+#### Comment calculer des taux de prévalence ou d'incidence ?
+
+- Toutes les données sont standardisées par rapport à la structure âge/sexe de la population de référence (spécifiée dans VarPartition)
+- $Taux\ non\ standard = \frac{Poids1}{PoidsTot}$. Ce taux est simple à calculer MAIS peut conduire à des analyses biaisées. Il y a un effet de structure qui n'est pas pris en compte : on compare des populations avec des structures d'âge et de sexe non équivalentes. Exemple : les jeunes sont moins malades, les pauvres sont plus jeunes, donc les pauvres sont moins malades, et donc la pauvreté protège de la maladie. 
+- Pour éviter ces biais d'analyse il faut comparer à d'autres variables égales (âge, niveau de vie, niveau de diplômes,...) : on réagrège les taux en appliquant une structure commune aux données. C'est ce qui donne le $Taux\ standard\ direct$ : On pondère par les effectifs de chaque catégorie. 
+- Le $Taux\ standard\ indirect$ est une autre méthode de standardisation qui est plutôt utilisée pour les phénomènes rares. C'est l'incidence (ou la prévalence) attendue "compte tenue de l'âge, du sexe, du niveau de vie, ...".
+
+#### Problème de nos données
+
+Les données publiées et en open data sur la DREES font touts les types de taux (non standardisés, standarisés par méthode directe, et par méthode indirecte), mais uniquement pour certains croisement de variables : Ce sont les variables de VarPartition et VarGroupage.
+
+#### Comment avons-nous outre-passé ce problème ?
+
+- On peut recalculer le taux non standarisés : La formule pour cela est $Taux\ non\ standard = \frac{\sum\limits_{nivviem}Poids1}{\sum\limits_{nivviem}PoidsTot} = \sum\limits_{nivviem}Poids1 \times TauxNonStand$. \
+où $Poids1$ représente l'effectif de la population qui a 1 en prévalence/indicence. 
+- Avec nos données, on ne peut pas faire de taux standardisés.
+- On aurait pu néanmoins partiellement dépasser ce problème en utilisant les lignes $NaN$ dans $VarPartition$ et $VarGroupage$ :
+    - Aucun problème pour $VarPartition = NaN$ : on a bien une ligne avec les taux standardisés par $VarGroupage$ et $ValGroupage$, pour chaque maladie.
+    - ATTENTION pour $VarGroupage = NaN$ : Si on fait une moyenne au sein de la région, on se heurte au fait qu'ici, les standardisations ont été faites VIS-A-VIS de la population de la région (âge, niveau de vie, diplômes, ...) donc il faut faire attention à l'analyse...
+    
+#### Conclusion : Comment exploiter la table de la DREES ?
+
+D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé. Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, nous choisirons suivant les cas l'une des deux options, tout en gardant à l'esprit les limites de nos analyses, et de nos statistiques descriptives.
 
