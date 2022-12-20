@@ -4,7 +4,7 @@
 
 Ce projet a pour objet l'étude des facteurs liés à une forte incidence des maladies chroniques sur un territoire donné. Pour cela, nous avons couplé diverses bases produites par des acteurs de la statistique publique française, et étudié les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible incidence.
 
-Tout da'bord, nous avons choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales d'incidence des maladies chroniques, raison pour laquelle nous avons surtout utilisé cette partie de la base de données. 
+Tout d'abord, nous avons choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales d'incidence des maladies chroniques, raison pour laquelle nous avons surtout utilisé cette partie de la base de données. 
 
 L'apport de notre travail est d'interroger l'importance des facteurs environnementaux (pollution, persticides, etc...), les facteurs socioéconomiques (niveau de vie médian, inégalités sociales, etc...), et l'offre de soins locale (médecins généralistes libéraux, spécialistes, infirmiers, etc...).
 
