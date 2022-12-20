@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Ce projet a pour objet l'étude des facteurs liés à une forte incidence des maladies chroniques sur un territoire donné. Pour cela nous couplé diverses bases produites par des acteurs de la statistique publique française, et étudié les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible incidence.
+Ce projet a pour objet l'étude des facteurs liés à une forte incidence des maladies chroniques sur un territoire donné. Pour cela, nous avons couplé diverses bases produites par des acteurs de la statistique publique française, et étudié les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible incidence.
 
-Pour cela, nous avons tout d'abord choisi une base de données produite par Samuel Allain de la DREES (avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données). Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales d'incidence des maladies chroniques, raison pour laquelle nous avons utilisé cette partie de la base de données. 
+Tout da'bord, nous avons choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales d'incidence des maladies chroniques, raison pour laquelle nous avons surtout utilisé cette partie de la base de données. 
 
-Nous avons ensuite voulu interroger l'importance des facteurs environnementaux (pollution, persticides, etc...), les facteurs socioéconomiques (niveau de vie médian inégalités sociales, etc...), et l'offre de soin locale (médecins généralistes libéraux notamment)à.
+L'apport de notre travail est d'interroger l'importance des facteurs environnementaux (pollution, persticides, etc...), les facteurs socioéconomiques (niveau de vie médian, inégalités sociales, etc...), et l'offre de soins locale (médecins généralistes libéraux, spécialistes, infirmiers, etc...).
 
-Finalement, nous avons considéré les données suivantes : 
+Finalement, nous avons considéré les sources de données suivantes : 
 - DREES : Contient les taux d'incidences et de prévalences pour diverses maladies chroniques, par tranche d'âge, niveau de vie, région, sexe et niveau de diplôme.
 - Insee : On forme une table comportant, pour chaque région métropolitaine :
   - Géographie (pour les cartes) ;
@@ -43,7 +43,7 @@ Finalement, nous avons considéré les données suivantes :
 
 Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composante Principale (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
 Le résultat le plus intéressant de notre travail est sans doute une absence de résultat significatif concernant l'offre de soins. Les inégalités d'accès aux soins primaires ne semblent pas, ici, expliquer les différences d'incidences des maladies chroniques. 
-L'étude est cependant limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études que des résultats en soit. 
+L'étude est cependant limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études. 
 
 ## Bibliographie
 
@@ -112,5 +112,4 @@ où $Poids1$ représente l'effectif de la population qui a 1 en prévalence/indi
     
 #### Conclusion : Comment exploiter la table de la DREES ?
 
-D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé. Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, nous choisirons suivant les cas l'une des deux options, tout en gardant à l'esprit les limites de nos analyses, et de nos statistiques descriptives.
-
+D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé. Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, nous choisirons suivant les cas l'une des deux options, tout en gardant à l'esprit les limites de nos analyses.
