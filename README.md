@@ -2,12 +2,13 @@
 
 ## Introduction
 
-Nous avons tout d'abord choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait pas les différences régionales de prévalence des maladies chroniques, raison pour laquelle nous avons utilisé cette partie de la base de données. 
-Nous avons voulu interroger l'importance des facteurs environnementaux (pollution, pesticides, ...) au regard des facteurs socioéconomiques. Par ailleurs, les données étant administratives, on peut se demander si les différences régionales observées ne seraient pas dû à un diagnostique moindre du fait d'un faible accès aux soins, que nous avons essayé d'objectiver en nous concentrant sur l'offre de soins primaires, et notamment sur les médecins généralistes libéraux.
+Ce projet a pour objet l'étude des facteurs liés à une forte prévalence des maladies chroniques sur un territoire donné. Pour cela nous couplé diverses bases produites par des acteurs de la statistique publique française, et étudié les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible prévalence.
 
-Nous avons voulu interroger l'importance des facteurs environnementaux (pollution, pesticides, ...) au regard des facteurs socioéconomiques.
+Pour cela, nous avons tout d'abord choisi une base de données produite par Samuel Allain de la DREES (avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données). Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales de prévalence des maladies chroniques, raison pour laquelle nous avons utilisé cette partie de la base de données. 
 
-Pour cela on considère différentes données :
+Nous avons ensuite voulu interroger l'importance des facteurs environnementaux (pollution, persticides, etc...), les facteurs socioéconomiques (niveau de vie médian inégalités sociales, etc...), et l'offre de soin locale (médecins généralistes libéraux notamment)à.
+
+Finalement, nous avons considéré les données suivantes : 
 - DREES : Contient les taux d'incidences et de prévalences pour diverses maladies chroniques, par tranche d'âge, niveau de vie, région, sexe et niveau de diplôme.
 - Insee : On forme une table comportant, pour chaque région métropolitaine :
   - Géographie (pour les cartes) ;
@@ -40,9 +41,10 @@ Pour cela on considère différentes données :
 
 ## Principales conclusions 
 
-Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. L'ACP nous permet ainsi d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
-Le résultat le plus intéressant de notre travail est en fait une absence de résultat, concernant l'offre de soins. Les inégalités d'accès aux soins primaires n'expliquent pas ici les différences de prévalence des maladies chroniques. 
-L'étude est limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études que des résultats en soi. 
+Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composante Principale (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
+Le résultat le plus intéressant de notre travail est sans doute une absence de résultat significatif concernant l'offre de soins. Les inégalités d'accès aux soins primaires ne semblent pas, ici, expliquer les différences de prévalence des maladies chroniques. 
+L'étude est cependant limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études que des résultats en soit. 
+
 ## Bibliographie
 
 - Allain, Samuel. 2022. Les maladies chroniques touchent plus souvent les personnes modestes et réduisent davantage leur espérance de vie. 1243. Direction de la recherche, des études, de l’évaluation et des statistiques (DREES). URL : https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/etudes-et-resultats/les-maladies-chroniques-touchent-plus-souvent
@@ -51,7 +53,7 @@ L'étude est limitée par les données auxquelles nous avons accès : il aurait 
 - Prost, Thierry, et Denis Raynaud. 2021. Recueil d’indicateurs régionaux : Offre de soins et état de santé. DREES. URL : https://drees.solidarites-sante.gouv.fr/sites/default/files/2021-01/rir_2014_doc_partie_1-p01-55.pdf
 - Santé publique France. 2022. Bulletin épidémiologique hebdomadaire, Journée mondiale du diabète. URL : https://www.santepubliquefrance.fr/import/bulletin-epidemiologique-hebdomadaire-8-novembre-2022-n-22-journee-mondiale-du-diabete-14-novembre-2022
 
-## Explication : L'exploitation de la table de la DREES
+## Explication annexe : L'exploitation de la table de la DREES
 
 #### Structure de la table
 
