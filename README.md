@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ce projet a pour objet l'étude des facteurs liés à une forte incidence des maladies chroniques sur un territoire donné. Pour cela, nous avons couplé diverses bases produites par des acteurs de la statistique publique française, et étudié les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible incidence.
+Ce projet a pour objet l'étude des facteurs liés à une forte incidence des maladies chroniques sur un territoire donné. Pour cela, nous avons couplé diverses bases produites par des acteurs de la statistique publique française afin d'étudier les potentiels facteurs qui nous semblaient pertinents pour pouvoir comparer leurs liens avec une forte ou faible incidence.
 
 Tout d'abord, nous avons choisi une base de données produite par Samuel Allain de la DREES, avec qui nous avons échangé par mail et visio pour mieux comprendre le mode de production et de présentation des données. Cette base a donné lieu à une publication sur le lien entre niveau de vie, maladie chronique et espérance de vie (Allain 2022). Elle n'analysait cependant pas les différences régionales d'incidence des maladies chroniques, raison pour laquelle nous avons surtout utilisé cette partie de la base de données. 
 
@@ -14,7 +14,7 @@ Finalement, nous avons considéré les sources de données suivantes :
   - Géographie (pour les cartes) ;
   - Nombre de médecins ;
   - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
-  - Les données socio-économiques (niveau de vie, taux pauvreté, ...).
+  - Les données socio-économiques (niveau de vie, taux de pauvreté, ...).
 
 ## Lien vers les données
 - Inégalités sociales face aux maladies chroniques : https://data.drees.solidarites-sante.gouv.fr/explore/dataset/er_inegalites_maladies_chroniques/information/
@@ -30,18 +30,18 @@ Finalement, nous avons considéré les sources de données suivantes :
   - Géographie (pour les cartes) ;
   - Nombre de médecins ;
   - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
-  - Les données socio-économiques (nivviem, taux pauvreté, ...).
+  - Les données socio-économiques (nivviem, taux de pauvreté, ...).
 - Partie 3 : Analyse jointe des deux tables. L'analyse est faite principalement à l'aide d'une Analyse en Composantes Principales, qui nous permet d'étudier les corrélations entre les différentes variables.
 
 ## Pour faire tourner le notebook
 
 - Toutes les cellules s'exécutent linéairement ;
-- Toutefois, les cellules avant des sorties graphiques html peuvent mettre un peu de temps à s'afficher, voir même ne pas s'afficher sur certains ordinateurs ;
+- Toutefois, les cellules avant des sorties graphiques html peuvent mettre un peu de temps à s'afficher, voire même ne pas s'afficher sur certains ordinateurs ;
 - Pour cette raison, nous avons travaillé sur le service sspcloud, qui parvient parfaitement à afficher des graphiques html.
 
 ## Principales conclusions 
 
-Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composantes Principales (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
+Notre étude nous a permis de distinguer quatre types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composantes Principales (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
 Le résultat le plus intéressant de notre travail est sans doute une absence de résultat significatif concernant l'offre de soins. Les inégalités d'accès aux soins primaires ne semblent pas, ici, expliquer les différences d'incidences des maladies chroniques. 
 L'étude est cependant limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études. 
 
