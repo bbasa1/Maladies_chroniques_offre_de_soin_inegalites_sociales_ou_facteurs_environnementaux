@@ -74,7 +74,7 @@ Voici un schéma de la table :
    - Décime de niveau de vie ;
    - Sexe.
 - L'ensemble des maladies considérées est :
-   -Cancers ;
+   - Cancers ;
    - Diabète ;
    - Insuffisance rénale chronique terminale ;
    - Maladies cardioneurovasculaires ;
