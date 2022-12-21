@@ -108,8 +108,8 @@ où $Poids1$ représente l'effectif de la population qui a 1 en prévalence/indi
 - Avec nos données, on ne peut pas faire de taux standardisés.
 - On aurait pu néanmoins partiellement dépasser ce problème en utilisant les lignes $NaN$ dans $VarPartition$ et $VarGroupage$ :
     - Aucun problème pour $VarPartition = NaN$ : on a bien une ligne avec les taux standardisés par $VarGroupage$ et $ValGroupage$, pour chaque maladie.
-    - ATTENTION pour $VarGroupage = NaN$ : Si on fait une moyenne au sein de la région, on se heurte au fait qu'ici, les standardisations ont été faites VIS-A-VIS de la population de la région (âge, niveau de vie, diplômes, ...) donc il faut faire attention à l'analyse...
+    - Attention pour $VarGroupage = NaN$ : Si on fait une moyenne au sein de la région, on se heurte au fait qu'ici, les standardisations ont été faites par rapport à la population de la région (âge, niveau de vie, diplômes, ...) donc il faut faire attention à l'analyse...
     
 #### Conclusion : Comment exploiter la table de la DREES ?
 
-D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé. Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, nous choisirons suivant les cas l'une des deux options, tout en gardant à l'esprit les limites de nos analyses.
+D'après notre discussion avec Samuel Allain, chacune des deux méthodes devrait nous donner des taux qui ne sont pas très éloignés d'un véritable taux standardisé. Ainsi, dans la mesure où notre analyse n'a pas vocation à être publiée, sauf indication contraire, nous utilisons un taux non standardisé que nous avons calculé, tout en gardant à l'esprit les limites de nos analyses.
