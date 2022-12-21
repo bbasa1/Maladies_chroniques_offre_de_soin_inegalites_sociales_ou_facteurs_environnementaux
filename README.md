@@ -31,7 +31,7 @@ Finalement, nous avons considéré les sources de données suivantes :
   - Nombre de médecins ;
   - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
   - Les données socio-économiques (nivviem, taux pauvreté, ...).
-- Partie 3 : Analyse jointe des deux tables. L'analyse est faite principalement à l'aide d'une Analyse en Composante Principale, qui nous permet d'étudier les corrélations entre les différentes variables.
+- Partie 3 : Analyse jointe des deux tables. L'analyse est faite principalement à l'aide d'une Analyse en Composantes Principales, qui nous permet d'étudier les corrélations entre les différentes variables.
 
 ## Pour faire tourner le notebook
 
@@ -41,7 +41,7 @@ Finalement, nous avons considéré les sources de données suivantes :
 
 ## Principales conclusions 
 
-Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composante Principale (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
+Notre étude nous a permis de distinguer quatres types de régions selon leur densité de population (urbain/rural), leur taux de pauvreté et la présence potentielle de facteurs environnementaux augmentant les risques de maladies chroniques. Une Analyse en Composantes Principales (ACP) nous permet d'étayer l'hypothèse de l'importance des facteurs environnementaux dans les différences de prévalence des maladies chroniques indépendamment des inégalités sociales. 
 Le résultat le plus intéressant de notre travail est sans doute une absence de résultat significatif concernant l'offre de soins. Les inégalités d'accès aux soins primaires ne semblent pas, ici, expliquer les différences d'incidences des maladies chroniques. 
 L'étude est cependant limitée par les données auxquelles nous avons accès : il aurait été intéressant d'analyser l'échelle départementale ou communale pour avoir une lecture plus fine. Nos analyses sont ainsi plutôt des hypothèses de recherche à prolonger par d'autres études. 
 
