@@ -88,7 +88,7 @@ Voici un schéma de la table :
 
 #### Grandeurs épidémiologiques théoriques :
 - Prévalence $= \frac{\text{nombre de cas présents ou passés}}{\text{population exposée à une date donnée }}$. C'est un stock à une date $t$.
-- Incidence : $ = $ nombre de nouveaux cas de cette maladie observés sur une période donnée. C'est une vitesse d'apparition d'une maladie à une date $t$.
+- Incidence : $=$ nombre de nouveaux cas de cette maladie observés sur une période donnée. C'est une vitesse d'apparition d'une maladie à une date $t$.
 
 #### Comment calculer des taux de prévalence ou d'incidence ?
 
