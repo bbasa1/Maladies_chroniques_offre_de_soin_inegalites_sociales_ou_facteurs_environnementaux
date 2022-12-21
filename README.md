@@ -1,4 +1,4 @@
-# Projet python
+# Maladies chroniques : Offre de soin, inégalités sociales ou facteurs environnementaux ?
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Finalement, nous avons considéré les sources de données suivantes :
   - Nombre de médecins ;
   - Les surfaces agricoles et production agricole (pour par exemple les maladies pulmonaires) ;
   - Les données socio-économiques (nivviem, taux pauvreté, ...).
-- Partie 3 : Analyse jointe des deux tables.
+- Partie 3 : Analyse jointe des deux tables. L'analyse est faite principalement à l'aide d'une Analyse en Composante Principale, qui nous permet d'étudier les corrélations entre les différentes variables.
 
 ## Pour faire tourner le notebook
 
