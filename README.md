@@ -1,4 +1,4 @@
-# Maladies chroniques : Offre de soin, inégalités sociales ou facteurs environnementaux ?
+# Maladies chroniques : Offre de soinS, inégalités sociales ou facteurs environnementaux ?
 
 ## Introduction
 
